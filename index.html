@@ -8,11 +8,47 @@
   <title>Amazon VA | E-commerce VA Portfolio</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    
+/* SERVICES SECTION */
+.section-intro {
+  max-width: 650px;
+  margin: 10px auto 35px;
+  text-align: center;
+  color: #555;
+  line-height: 1.7;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(20, 43, 74, 0.05);
+}
+
+.service-card h3 {
+  color: #142b4a;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.service-card ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+  line-height: 1.9;
+  color: #444;
+}
+
+.service-card li {
+  margin-bottom: 6px;
+}
 
     html {
       scroll-behavior: smooth;
@@ -284,37 +320,55 @@
     </section>
 
     <section id="portfolio">
-      <div class="container">
-        <h2 class="section-title">My Portfolio Projects</h2>
-        <p class="intro">
-          These sample projects will demonstrate my skills and
-          practical learning. They are practice projects, not paid
-          client work.
-        </p>
+      
+<!-- SERVICES SECTION -->
+<section id="services" class="section">
+  <div class="container">
+    <h2>Services</h2>
+    <p class="section-intro">
+      Practical support to help your online business stay organized,
+      save time, and keep daily tasks moving.
+    </p>
 
-        <div class="cards">
-          <div class="card">
-            <h3>Product Research</h3>
-            <p>Sample Amazon product research and evaluation.</p>
-          </div>
+    <div class="services-grid">
 
-          <div class="card">
-            <h3>Keyword Research</h3>
-            <p>Sample product keyword research and organization.</p>
-          </div>
-
-          <div class="card">
-            <h3>Amazon Listing</h3>
-            <p>Sample product title, bullet points, and description.</p>
-          </div>
-
-          <div class="card">
-            <h3>Pinterest Content</h3>
-            <p>Sample promotional pins and product descriptions.</p>
-          </div>
-        </div>
+      <div class="service-card">
+        <h3>Amazon VA Support</h3>
+        <ul>
+          <li>Product research</li>
+          <li>Keyword research</li>
+          <li>Competitor research</li>
+          <li>Sample product listing creation</li>
+          <li>SEO product title and description writing</li>
+          <li>Basic listing optimization support</li>
+        </ul>
       </div>
-    </section>
+
+      <div class="service-card">
+        <h3>E-commerce VA Support</h3>
+        <ul>
+          <li>Product research and data organization</li>
+          <li>Product information gathering</li>
+          <li>Spreadsheet updates</li>
+          <li>Product description writing</li>
+          <li>Social media content support</li>
+          <li>Pinterest content research</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Administrative Support</h3>
+        <ul>
+          <li>Data entry and document organization</li>
+          <li>Customer inquiry support</li>
+          <li>Order tracking and follow-ups</li>
+          <li>Google Workspace support</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <section class="light-section">
       <div class="container">
