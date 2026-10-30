@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nicole's Amazon VA and E-commerce VA portfolio.">
+  <title>Amazon VA | E-commerce VA Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #243247;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    :root {
+      --navy: #142b4a;
+      --blue: #315b87;
+      --light: #f3f6fa;
+      --muted: #68788b;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1080px;
+      margin: auto;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e8edf2;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--navy);
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    nav a {
+      color: var(--navy);
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: var(--light);
+      padding: 100px 0;
+    }
+
+    .tag {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      color: var(--navy);
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.15;
+      margin: 18px 0;
+      max-width: 750px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 650px;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 24px;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5eaf0;
+      border-radius: 9px;
+      padding: 26px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .light-section {
+      background: var(--light);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #dce4ed;
+      color: var(--navy);
+      padding: 9px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+    }
+
+    .contact h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      color: #d8e2ef;
+    }
+
+    .contact a {
+      color: white;
+    }
+
+    footer {
+      background: #0e2037;
+      color: #d8e2ef;
+      padding: 22px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">MY PORTFOLIO</div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="tag">Amazon VA | E-commerce VA</div>
+        <h1>Helping Online Businesses Stay Organized and Grow.</h1>
+        <p>
+          Hi! I'm [Your Name], an aspiring Amazon Virtual Assistant
+          and E-commerce Virtual Assistant with a background in
+          sales, marketing, customer service, and product research.
+        </p>
+        <a href="#portfolio" class="btn">Explore My Work</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="intro">
+          I have a background in sales and marketing, with experience
+          handling customer inquiries, processing orders, and
+          coordinating distributor onboarding. I am developing my
+          e-commerce skills through product research, keyword research,
+          Amazon affiliate marketing, and content creation.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="light-section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="intro">
+          Areas of support I am developing and practicing.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Amazon VA Support</h3>
+            <p>
+              Product research, keyword research, competitor research,
+              sample product listings, and SEO product descriptions.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>E-commerce VA Support</h3>
+            <p>
+              Product content support, social media content,
+              Pinterest marketing, customer communication,
+              and order coordination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section-title">My Portfolio Projects</h2>
+        <p class="intro">
+          These sample projects will demonstrate my skills and
+          practical learning. They are practice projects, not paid
+          client work.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Product Research</h3>
+            <p>Sample Amazon product research and evaluation.</p>
+          </div>
+
+          <div class="card">
+            <h3>Keyword Research</h3>
+            <p>Sample product keyword research and organization.</p>
+          </div>
+
+          <div class="card">
+            <h3>Amazon Listing</h3>
+            <p>Sample product title, bullet points, and description.</p>
+          </div>
+
+          <div class="card">
+            <h3>Pinterest Content</h3>
+            <p>Sample promotional pins and product descriptions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <h2 class="section-title">Tools & Skills</h2>
+        <div class="skills">
+          <span class="skill">Google Workspace</span>
+          <span class="skill">Microsoft 365</span>
+          <span class="skill">Canva</span>
+          <span class="skill">ChatGPT</span>
+          <span class="skill">Gemini</span>
+          <span class="skill">Meta AI</span>
+          <span class="skill">Pinterest</span>
+          <span class="skill">Meta Business Suite</span>
+          <span class="skill">TikTok Shop</span>
+          <span class="skill">Zoom</span>
+          <span class="skill">Google Meet</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Let's Connect!</h2>
+        <p>Interested in working together? I'd love to hear from you.</p>
+        <p>Email: [Your Professional Email]</p>
+        <p>LinkedIn: [Your LinkedIn URL]</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 [Your Name]. All rights reserved.
+  </footer>
+
+</body>
+</html>
