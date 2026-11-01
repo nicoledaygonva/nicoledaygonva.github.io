@@ -504,5 +504,29 @@ a:hover {
     © 2026 Nicole. All rights reserved.
   </footer>
 
+        <script>
+  const revealElements = document.querySelectorAll(
+    'section, .service-card'
+  );
+
+  revealElements.forEach((element) => {
+    element.classList.add('reveal');
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  revealElements.forEach((element) => {
+    observer.observe(element);
+  });
+</script>
 </body>
 </html>
