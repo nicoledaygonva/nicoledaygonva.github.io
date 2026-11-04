@@ -303,91 +303,105 @@ a:hover {
   }
 }
  
-/* ===== TOOLS & TECHNOLOGY CARDS ===== */
+
+/* ===== TOOLS & TECHNOLOGY ===== */
+
+.section-description {
+  color: var(--muted);
+  max-width: 650px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 25px;
 }
 
 .tool-card {
   background: #ffffff;
-  border: 1px solid #e2eaf3;
-  border-radius: 14px;
-  padding: 24px 20px;
-  text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e8edf2;
+  border-radius: 10px;
+  padding: 20px 12px;
+  min-height: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
 }
 
 .tool-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 22px rgba(20, 45, 80, 0.09);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(20, 43, 74, 0.07);
 }
 
-.tool-icon {
-  width: 46px;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eaf2ff;
-  color: #183b68;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 16px;
+.tool-card img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .tool-card h3 {
-  color: #183b68;
-  font-size: 17px;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.tool-card p {
-  color: #64748b;
-  font-size: 14px;
-  line-height: 1.6;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
   margin: 0;
 }
 
 .tools-subtitle {
-  color: #183b68;
+  color: var(--navy);
   font-size: 21px;
   margin-top: 45px;
   margin-bottom: 10px;
 }
 
+.tool-placeholder {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: #eaf2ff;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.learning-card {
+  min-height: 145px;
+}
+
 .learning-label {
-  display: inline-block;
-  margin-top: 14px;
-  padding: 5px 10px;
-  border-radius: 20px;
   background: #edf4ff;
-  color: #2457a7;
-  font-size: 12px;
+  color: #315b87;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
   font-weight: 600;
 }
 
-/* Responsive layout */
-
 @media (max-width: 768px) {
   .tools-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-  }
-
-  .tool-card {
-    padding: 18px 14px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .tools-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tool-card {
+    padding: 16px 9px;
   }
 }
   </style>
@@ -607,105 +621,107 @@ a:hover {
    <!-- TOOLS & SKILLS SECTION -->
 
 
+
 <section id="tools">
   <div class="container">
+
     <h2 class="section-title">Tools & Technology</h2>
 
     <p class="section-description">
-      Familiar with tools for e-commerce support, research,
-      productivity, content creation, and communication.
+      Tools and platforms used for e-commerce support,
+      research, productivity, content creation, and communication.
     </p>
 
     <div class="tools-grid">
 
       <div class="tool-card">
-        <div class="tool-icon">G</div>
+        <img src="https://cdn.simpleicons.org/googleworkspace"
+             alt="Google Workspace logo">
         <h3>Google Workspace</h3>
-        <p>Documents, spreadsheets, presentations, and file organization.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">M</div>
+        <img src="https://cdn.simpleicons.org/microsoft365"
+             alt="Microsoft 365 logo">
         <h3>Microsoft 365</h3>
-        <p>Document preparation, spreadsheets, and productivity tasks.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">C</div>
+        <img src="https://cdn.simpleicons.org/canva"
+             alt="Canva logo">
         <h3>Canva</h3>
-        <p>Creating social media graphics and visual content.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">P</div>
+        <img src="https://cdn.simpleicons.org/pinterest"
+             alt="Pinterest logo">
         <h3>Pinterest</h3>
-        <p>Affiliate content promotion and visual content sharing.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">M</div>
+        <img src="https://cdn.simpleicons.org/metabusinesssuite"
+             alt="Meta Business Suite logo">
         <h3>Meta Business Suite</h3>
-        <p>Social media content and page management.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">T</div>
+        <img src="https://cdn.simpleicons.org/tiktok"
+             alt="TikTok logo">
         <h3>TikTok Shop</h3>
-        <p>Familiarity with e-commerce and product content features.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">Z</div>
+        <img src="https://cdn.simpleicons.org/zoom"
+             alt="Zoom logo">
         <h3>Zoom</h3>
-        <p>Online meetings and virtual communication.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">G</div>
+        <img src="https://cdn.simpleicons.org/googlemeet"
+             alt="Google Meet logo">
         <h3>Google Meet</h3>
-        <p>Virtual meetings and online collaboration.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">G</div>
+        <img src="https://cdn.simpleicons.org/googledrive"
+             alt="Google Drive logo">
         <h3>Google Drive</h3>
-        <p>Cloud file storage and document organization.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">G</div>
+        <img src="https://cdn.simpleicons.org/grammarly"
+             alt="Grammarly logo">
         <h3>Grammarly</h3>
-        <p>Grammar checking and writing improvement.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">AI</div>
+        <img src="https://cdn.simpleicons.org/openai"
+             alt="OpenAI logo">
         <h3>ChatGPT</h3>
-        <p>Writing assistance, content drafting, and research support.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">G</div>
+        <img src="https://cdn.simpleicons.org/googlegemini"
+             alt="Google Gemini logo">
         <h3>Google Gemini</h3>
-        <p>AI-assisted writing and research support.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">AI</div>
+        <img src="https://cdn.simpleicons.org/meta"
+             alt="Meta logo">
         <h3>Meta AI</h3>
-        <p>AI-assisted content and idea generation.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">T</div>
+        <img src="https://cdn.simpleicons.org/trello"
+             alt="Trello logo">
         <h3>Trello</h3>
-        <p>Basic familiarity with task and project organization.</p>
       </div>
 
       <div class="tool-card">
-        <div class="tool-icon">N</div>
+        <img src="https://cdn.simpleicons.org/notion"
+             alt="Notion logo">
         <h3>Notion</h3>
-        <p>Basic familiarity with notes and workspace organization.</p>
       </div>
 
     </div>
@@ -714,28 +730,26 @@ a:hover {
 
     <div class="tools-grid learning-grid">
 
-      <div class="tool-card">
-        <div class="tool-icon">A</div>
+      <div class="tool-card learning-card">
+        <div class="tool-placeholder">A</div>
         <h3>Amazon Seller Central</h3>
-        <p>Learning seller account navigation and listing workflows.</p>
         <span class="learning-label">Currently Learning</span>
       </div>
 
-      <div class="tool-card">
-        <div class="tool-icon">H</div>
+      <div class="tool-card learning-card">
+        <div class="tool-placeholder">H</div>
         <h3>Helium 10</h3>
-        <p>Learning product and keyword research features.</p>
         <span class="learning-label">Currently Learning</span>
       </div>
 
-      <div class="tool-card">
-        <div class="tool-icon">J</div>
+      <div class="tool-card learning-card">
+        <div class="tool-placeholder">J</div>
         <h3>Jungle Scout</h3>
-        <p>Learning product research and market analysis features.</p>
         <span class="learning-label">Currently Learning</span>
       </div>
 
     </div>
+
   </div>
 </section>
 
