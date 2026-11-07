@@ -104,17 +104,30 @@
     }
 
     .hero {
-      background: var(--light);
-      padding: 100px 0;
-    }
-    
+  background: var(--light);
+  padding: 100px 0;
+}
+
+/* Hero two-column layout */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
 .profile-picture {
-  width: 180px;
-  height: 180px;
+  width: 280px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 18px;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0;
 }
     
     .tag {
@@ -249,7 +262,21 @@
       .hero {
         padding: 70px 0;
       }
+.hero-content {
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 30px;
+}
 
+.hero-image {
+  grid-row: 1;
+}
+
+.hero-text h1,
+.hero-text p {
+  margin-left: auto;
+  margin-right: auto;
+}
       .cards {
         grid-template-columns: 1fr;
       }
@@ -433,30 +460,38 @@ a:hover {
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-    
-<img
-  src="nicole-profile.jpg"
-  alt="Nicole Daygon"
-  class="profile-picture"
->
-        
+  
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+
+      <div class="hero-text">
         <div class="tag">Amazon VA | E-commerce VA</div>
+
         <h1>Helping Online Businesses Stay Organized and Grow.</h1>
 
-<p>
-  Hi! I'm Nicole, an aspiring Amazon VA and E-commerce VA.
-  I help online businesses stay organized by supporting
-  product research, competitor analysis, product listing
-  creation, data organization, and administrative tasks.
-  My goal is to make your daily operations easier so you
-  can focus more on growing your business.
-</p>
+        <p>
+          Hi! I'm Nicole, an aspiring Amazon VA and E-commerce VA.
+          I help online businesses stay organized by supporting
+          product research, competitor analysis, product listing
+          creation, data organization, and administrative tasks.
+          My goal is to make your daily operations easier so you
+          can focus more on growing your business.
+        </p>
+
         <a href="#portfolio" class="btn">Explore My Work</a>
       </div>
-    </section>
+
+      <div class="hero-image">
+        <img
+          src="nicole-profile.jpg"
+          alt="Nicole Daygon"
+          class="profile-picture"
+        >
+      </div>
+
+    </div>
+  </section>
 
     <section id="about">
       <div class="container">
